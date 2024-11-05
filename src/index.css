@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Light';
+  src: local('Roboto-Light'),
+    url("../src/assets/font/Roboto-Light.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Regular';
+  src: local('Roboto-Regular'),
+    url("../src/assets/font/Roboto-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Medium';
+  src: local('Roboto-Medium'),
+    url("../src/assets/font/Roboto-Medium.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Bold';
+  src: local('Roboto-Bold'),
+    url("../src/assets/font/Roboto-Bold.ttf") format("truetype");
+}
+
+
+.intro {
+  animation: animate 2s ease-in-out none 1s;
+}
+
+@keyframes animate {
+
+  0% {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    font-size:100%;
+  }
+
+  100% {
+    opacity: .8;
+    top: 5%;
+    left: 18%;
+    font-size: 30%;
+  }
+}
+
+.hero-left{
+  animation: slideIn 1s ease-in-out none ;
+}
+.hero-right{
+  animation: reverseSlideIn 1s ease-in-out none ;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Start from the bottom */
+  }
+  to {
+    transform: translateX(0); /* Move to the top */
+  }
+}
+@keyframes reverseSlideIn {
+  from {
+    transform: translateX(100%); /* Start from the bottom */
+  }
+  to {
+    transform: translateX(0); /* Move to the top */
+  }
+}
