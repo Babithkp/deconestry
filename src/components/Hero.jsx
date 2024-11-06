@@ -1,11 +1,10 @@
-import zigzac from "../assets/icons/zigzac.svg";
-import heroImg from "../assets/images/hero-image.png";
+import zigzac from "../assets/icons/zigzac.svg";import heroImg from "../assets/images/hero-image.png";
 import subImg1 from "../assets/images/subHero-image1.png";
 import subImg2 from "../assets/images/subHero-image2.png";
 import subImg3 from "../assets/images/subHero-image3.png";
 export default function Hero() {
   return (
-    <section className="flex h-[89vh] w-full justify-center items-center px-8 max-sm:px-5 max-sm:text-center max-lg:px-2 max-2xl:pt-20 max-2xl:mb-20">
+    <section className="flex h-[80vh] w-full justify-center items-center p-10 px-20 mt-20 max-sm:px-5 max-sm:text-center max-lg:px-2 max-2xl:pt-20 max-2xl:mb-20 ">
       <div className="w-1/2 flex flex-col gap-10 hero-left max-lg:gap-8 max-sm:w-full max-sm:items-center">
         <h2 className="text-6xl font-primarymedium w-[70%] relative max-lg:text-4xl max-sm:w-[90%] max-sm:text-4xl ">
           Interior Design In a modern way
@@ -20,7 +19,10 @@ export default function Hero() {
           home sweet home
         </p>
         <div className="flex gap-5 font-primarymedium text-lg">
-          <a href="#contact" className="bg-black text-white rounded-xl px-4 py-2">
+          <a
+            href="#contact"
+            className="bg-black text-white rounded-xl px-4 py-2"
+          >
             Contact <span className="text-[#FF6201]">Us</span>
           </a>
           <a href="#about" className="border border-black rounded-xl px-4 py-2">
@@ -34,9 +36,12 @@ export default function Hero() {
         </div>
       </div>
       <figure className="w-1/2 grid place-items-center hero-right max-sm:hidden">
-        <img src={heroImg} alt="hero image" className="h-[35rem] max-lg:h-[25rem]"/>
+        <img
+          src={heroImg}
+          alt="hero image"
+          className="h-[35rem] max-lg:h-[25rem]"
+        />
       </figure>
-      
     </section>
   );
 }

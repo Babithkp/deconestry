@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -12,15 +13,16 @@ function App() {
     setisLoading(false);
   }, 3000);
   return (
-    <main className="px-20 max-md:px-5 max-sm:px-2" >
+    <main className="overflow-hidden max-w-[1515px] flex items-center flex-col">
+      <Navbar/>
       {isLoading ? (
         <Intro />
       ) : (
         <>
           <Hero />
-          <About/>
-          <Services/>
-          <ContactUs/>
+          <About />
+          <Services />
+          <ContactUs />
         </>
       )}
     </main>
