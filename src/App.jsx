@@ -13,7 +13,7 @@ function App() {
     setisLoading(false);
   }, 3000);
   return (
-    <main className="overflow-hidden max-w-[1515px] flex items-center flex-col">
+    <main className="overflow-hidden max-w-screen flex items-center flex-col">
       <Navbar/>
       {isLoading ? (
         <Intro />
