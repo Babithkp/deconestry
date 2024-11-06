@@ -30,8 +30,8 @@ export default function Navbar() {
       </a>
 
       <div className="flex gap-10 font-primarymedium text-xl max-sm:hidden">
-        <a href="#services">Services</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact Us</a>
       </div>
 
@@ -47,8 +47,8 @@ export default function Navbar() {
         <div className="w-full flex justify-end p-5">
           <RxCross2 size={24} onClick={() => setOpen(false)} />
         </div>
-        <a href="#services" onClick={() => setOpen(false)}>Services</a>
         <a href="#about" onClick={() => setOpen(false)}>About</a>
+        <a href="#services" onClick={() => setOpen(false)}>Services</a>
         <a href="#contact" onClick={() => setOpen(false)}>Contact Us</a>
       </div>
     </nav>
