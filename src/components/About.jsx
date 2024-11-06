@@ -11,8 +11,11 @@ export default function About() {
   return (
     <section className="h-screen w-[90%] flex justify-center items-center relative max-2xl:my-20 " id="about">
       <h2 className="relative  text-6xl max-sm:text-lg">
-        A unique perspective on every detail...{" "}
-        <img src={zigzac} alt="zigzac" className="absolute -bottom-8 right-14 max-sm:w-[3rem] max-sm:right-2 max-sm:-bottom-2" />
+        A unique perspective on every 
+        <span className="relative ml-5 max-sm:ml-2">
+        detail...{" "}
+        <img src={zigzac} alt="zigzac" className="absolute w-[8rem] -bottom-8 right-14 max-sm:w-[3rem] max-sm:right-2 max-sm:-bottom-4" />
+        </span>
       </h2>
         <img src={aboutImg2} alt="aboutImg2" className="w-[15rem] absolute left-10 top-28 max-sm:left-0 max-sm:w-[10rem] max-sm:top-48" />
         <img src={aboutImg6} alt="aboutImg5" className="w-[10rem] absolute right-10 top-20 max-sm:right-0 max-sm:w-[9rem] max-sm:top-30"  />

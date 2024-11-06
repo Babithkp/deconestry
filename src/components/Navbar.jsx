@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { IoMenu } from "react-icons/io5";
+import { useEffect, useState } from "react";import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 
 export default function Navbar() {
@@ -15,8 +14,6 @@ export default function Navbar() {
     return () => document.body.classList.remove("overflow-hidden");
   }, [open]);
 
-
-
   return (
     <nav
       className={`h-20 w-full flex justify-between items-center px-16 bg-[#DEDEDE] z-[1] fixed top-0 max-sm:px-5 `}
@@ -30,9 +27,14 @@ export default function Navbar() {
       </a>
 
       <div className="flex gap-10 font-primarymedium text-xl max-sm:hidden">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact Us</a>
+        <a
+          href="#about"
+          className="hover:text-[#FF6201] hover:underline-offset-2 hover:underline transition-all duration-300 ease-in-out"
+        >
+          About
+        </a>
+        <a href="#services" className="hover:text-[#FF6201] hover:underline-offset-2 hover:underline transition-all duration-300 ease-in-out">Services</a>
+        <a href="#contact" className="hover:text-[#FF6201] hover:underline-offset-2 hover:underline transition-all duration-300 ease-in-out">Contact Us</a>
       </div>
 
       <div className="hidden max-sm:block" onClick={() => setOpen(true)}>
@@ -47,9 +49,15 @@ export default function Navbar() {
         <div className="w-full flex justify-end p-5">
           <RxCross2 size={24} onClick={() => setOpen(false)} />
         </div>
-        <a href="#about" onClick={() => setOpen(false)}>About</a>
-        <a href="#services" onClick={() => setOpen(false)}>Services</a>
-        <a href="#contact" onClick={() => setOpen(false)}>Contact Us</a>
+        <a href="#about" onClick={() => setOpen(false)}>
+          About
+        </a>
+        <a href="#services" onClick={() => setOpen(false)}>
+          Services
+        </a>
+        <a href="#contact" onClick={() => setOpen(false)}>
+          Contact Us
+        </a>
       </div>
     </nav>
   );

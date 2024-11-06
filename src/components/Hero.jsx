@@ -7,12 +7,15 @@ export default function Hero() {
     <section className="flex h-[80vh] w-full justify-center items-center p-10 px-20 mt-20 max-sm:px-5 max-sm:text-center max-lg:px-2 max-2xl:pt-20 max-2xl:mb-20 ">
       <div className="w-1/2 flex flex-col gap-10 hero-left max-lg:gap-8 max-sm:w-full max-sm:items-center">
         <h2 className="text-6xl font-primarymedium w-[70%] relative max-lg:text-4xl max-sm:w-[90%] max-sm:text-4xl ">
-          Interior Design In a modern way
+          Interior Design In a modern 
+          <span className="relative ml-5">
           <img
             src={zigzac}
             alt="zigzac"
-            className="-bottom-8 right-3 absolute max-sm:w-20 max-sm:-bottom-5 max-sm:right-5"
+            className="-bottom-8 right-0 absolute max-sm:-bottom-5"
           />
+          way
+          </span>
         </h2>
         <p className="font-primarymedium w-[45%] text-xl max-xl:text-lg max-sm:w-full max-sm:text-lg max-sm:font-primarylight">
           Where the mind creates beauty, the heart creates a home. Welcome to
